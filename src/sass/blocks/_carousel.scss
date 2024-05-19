@@ -21,4 +21,43 @@
         right: -66px;
         left: auto;
     }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: -35px;
+        width: 100%;
+        li {
+            font-size: 0;
+            button {
+                font-size: 0;
+                width: 15px;  
+                height: 15px; 
+                padding: 0;   
+                border: none; 
+                border-radius: 50%; 
+                background: transparent; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+    
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: grey; 
+                    border-radius: 50%; 
+                    transition: background-color 0.3s, transform 0.3s;
+                }
+            }
+            &.slick-active button:before {
+                background-color: #ff0000; 
+                transform: scale(1.25); 
+            }
+        }
+    }    
 }
