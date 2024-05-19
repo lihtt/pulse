@@ -1,7 +1,7 @@
 @media screen and (max-width: 991px) {
     .promo {
         display: block; 
-        padding: 21px 40px 93px 40px;
+        padding: 21px 40px 70px 40px;
     }
     .consultation {
         padding: 100px 0 92px 20px;
@@ -19,14 +19,239 @@
     .feed__item {
         margin-left: 20px;
     }
-    .slick-dots {
+}
+
+
+@media (max-width: 775px) {
+    .header__logo {
+        img {
+            width: 200px;
+        }
+    }
+    .header__official {
+        margin-right: 19px;
+        font-size: 11px;
+    }
+    .header__phone {
+        font-size: 17px;
+    }
+    .promo {
+        padding: 30px 20px 70px 20px;
+        &__wrapper {
+            margin-top: 70px;
+        }
+        &__header {
+            font-size: 18px;
+        }
+        &__subheader {
+            margin-top: -5px;
+            font-size: 18px;
+        }
+        &__icons {
+            margin-top: 55px;
+            width: 380px;
+        }
+    }
+    .title {
+        font-size: 29px;
+    }
+    .advantages{
+        &__wrapper {
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+        &_item {
+            max-width: 160px;
+            margin: 0 5px;
+        }
+        &__title {
+            font-size: 16px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+    }
+    .carousel {
+        padding: 40px 0; 
+        &__inner {
+            width: 100%; 
+            max-width: 500px; 
+            margin: 0 auto; 
+        }
+        img {
+            width: 100%; 
+            height: auto; 
+        }
+        .slick-prev, .slick-next {
+            width: 20px; 
+            height: 30px;
+            img {
+                width: 100%; 
+                height: auto;
+            }
+        }
+        .slick-next {
+            right: 10px; 
+        }
+        .slick-prev {
+            left: 10px; 
+        }
+        .slick-dots {
+            bottom: -25px;
+            li button {
+                width: 10px;
+                height: 10px;
+                
+                &:before {
+                    width: 8px; 
+                    height: 8px;
+                }
+            }
+        }
+    }
+    .catalog__tab {
+        margin-top: -10px;
+        width: 160px;
+        font-size: 15px;
+    }
+    .feed {
+        &__descr {
+            font-size: 14px;
+        }
+    }
+}    
+
+
+@media (max-width: 575px) {
+    .header__logo {
+        img {
+            width: 200px;
+        }
+    }
+    .header__official {
         display: none;
+    }
+    .header__phone {
+        font-size: 17px;
+    }
+    .advantages {
+        &_item {
+            max-width: 110px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+    }
+    .feed-form {
+        margin-left: 42px;
+    }
+    .carousel {
+        &__inner {
+            max-width: 350px;
+        }
+        .slick-dots {
+            bottom: -20px; 
+            &:before {
+                width: 6px; 
+                height: 6px;
+            }
+        }
+    }
+    .catalog {
+        margin-top: 30px;
+        &__tabs {
+            margin-top: 20px;
+        }
+        &__tab {
+            margin-top: -10px;
+            width: 125px;
+            font-size: 13px;
+        }
+    }
+    .title {
+        font-size: 26px;
+    }
+    .feed {
+        &__form {
+            align-items: center;
+        }
+        &__img {
+            width: 130px;
+            height: 130px;
+        }
+        &__text {
+            margin-left: 40px;
+            padding-right: 30px;
+        }
+    }
+    .footer__info {
+        width: 100%;
     }
 }
 
-@media (max-width: 775px){
-
+@media (max-width: 435px) { 
+    .header__logo {
+        img {
+            width: 150px;
+        }
+    }
+    .header__official {
+        display: none;
+    }
+    .header__phone {
+        font-size: 17px;
+    }
+    .promo {
+        padding: 30px 20px 70px 20px;
+        &__wrapper {
+            margin-top: 70px;
+            align-items: flex-start;
+        }
+        &__header {
+            font-size: 18px;
+        }
+        &__subheader {
+            margin-top: -5px;
+            font-size: 18px;
+        }
+        &__icons {
+            margin-top: 50px;
+            width: 335px;
+        }
+        &__link {
+            margin-left: 18px;
+        }
+    }
+    .button_main {
+        margin-left: 18px;
+    }
+    .advantages {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        &_item {
+            max-width: 100px;
+        }
+        &__title {
+            font-size: 14px;
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+    }
+    .feed {
+        &-form {
+            margin-left: 18px;
+        }
+    }
+    .title {
+        font-size: 24px;
+    }
+    .catalog {
+        &__tab {
+            width: 100px;
+            font-size: 11px;
+        }
+    }
 }
-
-/* @media (max-width: 575px) */
-	
